@@ -1,0 +1,47 @@
+@import "mixins";
+
+ul {
+    @extend .right-border;
+    list-style: none;
+
+    li {
+        &:before {
+            text-align: right;
+            font-weight: 700;
+            display: inline-block;
+        }
+    }
+}
+
+ol {
+    @extend .right-border;
+    counter-reset: line;
+
+    li {
+        &:before {
+            counter-increment: line;
+            content: counter(line);
+            font-size: 1.5em;
+            text-align: right;
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+li {
+    @include font-cut(1em, 400);
+    margin: 0.25em;
+}
+
+dl {
+    margin: 0.5em 0;
+    dt {
+        font-size: 2em;
+        padding: 0.25 0;
+    }
+    dd {
+        border-left: 1em solid $color-primary;
+        padding: 0.25em 2em;
+    }
+}

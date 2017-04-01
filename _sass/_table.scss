@@ -1,0 +1,28 @@
+@import "mixins";
+
+table {
+    @extend .right-border;
+    width: 100%;
+    border-collapse: collapse;
+    thead {
+        background-color: $color-secondary;
+        border: 3px solid $color-primary;
+    }
+    tbody {
+        background-color: $color-secondary;
+        border: 3px solid $color-primary;
+
+        tr:nth-child(odd) {
+            background-color: #FFF;
+        }
+    }
+    tfoot {
+        background-color: $color-secondary;
+        border-bottom: 1px solid $color-secondary;
+        border: 3px solid $color-primary;
+    }
+}
+
+td, th {
+    padding: 0.5em;
+}

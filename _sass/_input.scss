@@ -1,0 +1,55 @@
+@import "mixins";
+
+form {
+    @extend .col;
+    @extend .right-border;
+    margin: 0.5em 0;
+    align-items: flex-start;
+
+    section {
+        @extend .row;
+        margin: 0.25em 0;
+        align-items: flex-start;
+        align-content: center;
+        button, input {
+            margin-right: 0.5em; 
+        }
+    }
+}
+
+input, button {
+    @include font-cut(1em, 400);
+    margin: 0;
+    border: none;
+    padding: 0.75em 1.5em;
+}
+
+input {
+    min-width: 20em;
+    border: 1px solid $color-primary;
+}
+
+button {
+    min-width: 10em;
+    background-color: $color-primary;
+    color: $text-color-secondary;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-accent;
+    }
+
+    &[type=submit] {
+        background-color: $color-accent;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $text-color-secondary;
+        }
+    }
+}
+
+label {
+    @include font-cut(1.5em, 500);
+    margin: 0.25em 0;
+}

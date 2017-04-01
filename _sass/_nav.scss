@@ -1,0 +1,23 @@
+@import "mixins";
+
+nav {
+    @extend .row;
+    background-color: $color-primary;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+
+    a {
+        @include font-cut(1.5em, 500);
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color-secondary;
+        padding: 0.5em;
+        min-width: 3.5em;
+
+        &:hover, &.active {
+            transition: background-color 0.3s ease;
+            background-color: $color-accent;
+        }
+    }
+}

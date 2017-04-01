@@ -1,0 +1,13 @@
+@import "mixins";
+
+main {
+    @extend .col;
+    padding: 2em 10em;
+
+    @media only screen and (max-width: 768px) {
+        padding: 2em 1em;
+    }
+    @media only screen and (max-width: 480px) {
+        padding: 2em 1em;
+    }
+}
