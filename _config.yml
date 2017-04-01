@@ -1,3 +1,6 @@
+title: "Serenade"
+description: "Serenade theme"
 site-url: ""
 
-theme: jekyll-theme-slate
+header_title: "Sere<span>n</span>ade"
+header_subtitle: "The <span>theme</span> that does stuff"
