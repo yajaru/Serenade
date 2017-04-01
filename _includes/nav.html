@@ -2,7 +2,7 @@
     {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
     {% for p in navigation_pages %}
         {% if p.navigation_weight %}
-            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
+            <a href="{{ site.url }}/{{ site.github.repository_name | default: "" }}{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
         {% endif %}
     {% endfor %}
 </nav>
