@@ -12,7 +12,7 @@ form {
         align-items: flex-start;
         align-content: center;
         button, input {
-            margin-right: 0.5em; 
+            margin-right: 0.5em;
         }
     }
 }
@@ -25,12 +25,12 @@ input, button {
 }
 
 input {
-    min-width: 20em;
+    min-width: 12em;
     border: 1px solid $color-primary;
 }
 
 button {
-    min-width: 10em;
+    min-width: 6em;
     background-color: $color-primary;
     color: $text-color-secondary;
     transition: background-color 0.3s ease;
