@@ -24,7 +24,7 @@ h1 {
     @include font-cut(7em, 300);
 
     @media only screen and (max-width: 480px) {
-        @@include font-cut(5em, 300);
+        @include font-cut(5em, 300);
     }
 
     }

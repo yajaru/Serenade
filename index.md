@@ -32,8 +32,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat, ipsum sit
 2. Second Item
     1. really
         2. really
-            3. REALLY
-                4. nested
+            3. nested
 3. Third Item
 
 ### Unordered List
@@ -43,8 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat, ipsum sit
 - Second Item
     - really
         - really
-            - REALLY
-                - nested
+            - nested
 - Third Item
 
 ### Definition List
