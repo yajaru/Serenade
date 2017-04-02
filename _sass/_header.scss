@@ -19,6 +19,9 @@ header {
         font-stretch: semi-expanded;
         border-left: 0.25em solid $text-color-secondary;
         padding: 0.30em;
+        @media only screen and (max-width: 480px) {
+            @include font-cut(3.5em, 700);
+        }
     }
 
     h2 {
