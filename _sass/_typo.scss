@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 h1 {
     @include font-cut(7em, 300);
+
+    @media only screen and (max-width: 480px) {
+        @@include font-cut(5em, 300);
+    }
+
+    }
 }
 h2 {
     @include font-cut(3.5em, 400);
