@@ -9,8 +9,14 @@ $text-color-secondary: ivory;
 $text-color-accent: #EF3340;
 $text-color-accent-dark: #BD0F1B;
 
+$break-point-small: 480px;
+$break-point-medium: 768px;
+$break-point-large: 1024px;
+$break-point-header-max: 1280px;
+
 
 @import "reset";
+@import "body";
 @import "typo";
 @import "header";
 @import "nav";

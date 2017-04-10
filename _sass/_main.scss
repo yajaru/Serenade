@@ -2,12 +2,17 @@
 
 main {
     @extend .col;
-    padding: 2em 10em;
+    align-self: center;
+    padding: 2em 0;
+    width: 64em;
 
-    @media only screen and (max-width: 768px) {
-        padding: 2em 1em;
+    @media only screen and (max-width: $break-point-small) {
+        width: auto;
     }
-    @media only screen and (max-width: 480px) {
-        padding: 2em 1em;
+    @media only screen and (max-width: $break-point-medium) {
+        width: auto;
+    }
+    @media only screen and (max-width: $break-point-large) {
+        width: auto;
     }
 }

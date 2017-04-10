@@ -3,7 +3,8 @@ footer {
     background-color: $color-primary;
 	align-items: center;
 	justify-content: space-around;
-	padding: 3.5em 1em;
+	padding: 3.5em 0;
+    width: 100%;
 
     h5 {
         color: $text-color-secondary;
