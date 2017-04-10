@@ -5,8 +5,16 @@ nav {
     background-color: $color-primary;
     align-items: center;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 64em;
+
+    @media only screen and (max-width: $break-point-small) {
+        flex-direction: column !important;
+        a {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
 
     @media only screen and (max-width: $break-point-large) {
         width: 100%;
