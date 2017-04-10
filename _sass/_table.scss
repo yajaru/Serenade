@@ -4,6 +4,8 @@ table {
     @extend .right-border;
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
+    box-sizing: padding-box;
     overflow-x: scroll;
     thead {
         background-color: $color-secondary;
