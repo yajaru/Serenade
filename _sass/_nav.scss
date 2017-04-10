@@ -6,6 +6,11 @@ nav {
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    width: 64em;
+
+    @media only screen and (max-width: $break-point-large) {
+        width: 100%;
+    }
 
     a {
         @include font-cut(1.5em, 500);
